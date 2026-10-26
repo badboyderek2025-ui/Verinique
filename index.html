@@ -1,80 +1,640 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0b0b0b">
-<meta name="description" content="Veronique Ink Tattoo Studio — custom tattoo art, thoughtful design, and personal appointments.">
+<meta name="theme-color" content="#080808">
+<meta name="description" content="Veronique Ink Tattoo Studio — custom tattoos, black and grey realism, and personalized tattoo designs.">
+
 <title>Veronique Ink Tattoo Studio</title>
+
 <style>
-:root{--bg:#0b0b0b;--panel:#141414;--gold:#f2f2f2;--gold-light:#ffffff;--cream:#f7f7f7;--muted:#b8b8b8}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
-a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
-header{position:sticky;top:0;z-index:10;background:rgba(11,11,11,.94);backdrop-filter:blur(12px);border-bottom:1px solid #303030}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:16px 0}.brand{font-family:Georgia,serif;font-size:1.15rem;letter-spacing:.08em;color:var(--gold-light);font-weight:bold}.brand small{display:block;font: .62rem Arial,sans-serif;letter-spacing:.28em;color:var(--muted);text-transform:uppercase}
-nav{display:flex;gap:24px;align-items:center;font-size:.9rem;color:#e4dfd4}nav a:hover{color:var(--gold-light)}
-.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#17130b;padding:12px 20px;border-radius:3px;font-weight:bold;border:1px solid var(--gold);transition:.2s}.btn:hover{background:var(--gold-light);transform:translateY(-1px)}.btn-outline{background:transparent;color:var(--gold-light)}
-.hero{padding:72px 0 66px;background:radial-gradient(ellipse at 12% 10%,#242424 0,transparent 38%),linear-gradient(115deg,#0b0b0b 45%,#171717 100%);overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:1fr .9fr;gap:54px;align-items:center}.eyebrow{color:var(--gold);letter-spacing:.24em;text-transform:uppercase;font-size:.76rem;font-weight:bold}.hero h1{font-family:Georgia,serif;font-size:clamp(2.8rem,6vw,5.4rem);line-height:1.02;font-weight:normal;margin:18px 0}.hero h1 span{color:var(--gold-light);font-style:italic}.hero p{color:var(--muted);max-width:520px;font-size:1.08rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero-image{position:relative}.hero-image:before{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--gold);z-index:0}.hero-image img{position:relative;z-index:1;width:100%;height:570px;object-fit:cover;object-position:center;border-radius:2px;display:block;filter:saturate(.8)}
-.badge{position:absolute;bottom:22px;left:-20px;z-index:2;background:#111;padding:14px 18px;border-left:3px solid var(--gold);font-family:Georgia,serif}.badge small{display:block;font: .7rem Arial,sans-serif;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}
-section{padding:76px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 38px}.section-head h2{font:normal clamp(2rem,4vw,3.2rem) Georgia,serif;margin:10px 0;color:var(--cream)}.section-head p{color:var(--muted);margin:0}.services{background:#101010}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:28px;background:var(--panel);border:1px solid #303030;min-height:190px}.card .num{color:var(--gold);font:italic 1.6rem Georgia,serif}.card h3{font:normal 1.35rem Georgia,serif;margin:12px 0 8px}.card p{color:var(--muted);font-size:.95rem;margin:0}
-.gallery-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:center}.gallery-grid img{width:100%;height:500px;object-fit:cover;object-position:center;border:1px solid #4a3c22}.gallery-copy h2{font:normal clamp(2rem,4vw,3rem) Georgia,serif;margin:12px 0}.gallery-copy p{color:var(--muted)}.note{border-left:2px solid var(--gold);padding:10px 0 10px 16px;margin-top:22px;color:#e5d8b8}
-.booking{background:linear-gradient(135deg,#1a1a1a,#0c0c0c);border-top:1px solid #303030;border-bottom:1px solid #303030}.booking-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.booking h2{font:normal clamp(2rem,4vw,3.2rem) Georgia,serif;margin:10px 0}.booking p{color:var(--muted)}.contact-list{display:grid;gap:12px}.contact{display:flex;align-items:center;gap:14px;background:#151515;border:1px solid #303030;padding:16px}.contact .icon{display:grid;place-items:center;width:42px;height:42px;background:#292929;color:var(--gold-light);font-weight:bold;border-radius:50%}.contact strong{display:block}.contact small{color:var(--muted)}.contact .go{margin-left:auto;color:var(--gold-light);font-size:1.2rem}
-footer{padding:28px 0;color:var(--muted);font-size:.85rem}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.gold{color:var(--gold-light)}
-@media(max-width:760px){.nav{align-items:flex-start}.nav .btn{display:none}nav{gap:12px;font-size:.8rem;flex-wrap:wrap;justify-content:flex-end}.hero{padding:48px 0}.hero-grid,.gallery-grid,.booking-grid{grid-template-columns:1fr;gap:34px}.hero-image img{height:440px}.badge{left:8px}.cards{grid-template-columns:1fr}.gallery-grid img{height:440px}section{padding:58px 0}}
-@media(max-width:420px){.brand{font-size:.95rem}nav{max-width:180px}.hero h1{font-size:2.7rem}.hero-image img{height:370px}}
-.price-cards .price{font-size:1.35rem;font-weight:bold;color:#fff;margin:8px 0 12px}.price-note{text-align:center;color:var(--muted);font-size:.9rem;max-width:760px;margin:26px auto 0}.price-cards .card{min-height:205px}
+:root {
+  --bg: #080808;
+  --panel: #151515;
+  --white: #ffffff;
+  --muted: #bdbdbd;
+  --border: #333333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1100px, 90%);
+  margin: auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(8, 8, 8, 0.97);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav {
+  min-height: 78px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.brand {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.brand span {
+  display: block;
+  color: var(--muted);
+  font: 10px Arial, sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  background: var(--white);
+  color: #000;
+  border: 1px solid var(--white);
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button.outline {
+  background: transparent;
+  color: var(--white);
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.hero {
+  padding: 75px 0;
+  background: linear-gradient(130deg, #080808, #202020);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 55px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #c8c8c8;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+  font-size: clamp(42px, 6vw, 76px);
+  line-height: 1.08;
+  font-weight: normal;
+  margin: 20px 0;
+}
+
+h1 em {
+  color: #cfcfcf;
+}
+
+.hero p {
+  color: var(--muted);
+  max-width: 500px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.artist-photo {
+  width: 100%;
+  height: 530px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid #444;
+  background: #222;
+}
+
+section {
+  padding: 75px 0;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 38px;
+}
+
+.section-heading h2 {
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: normal;
+  margin: 12px 0;
+}
+
+.section-heading p,
+.card p,
+.gallery-copy p,
+.booking p {
+  color: var(--muted);
+}
+
+.services,
+.pricing {
+  background: #111;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  background: var(--panel);
+  padding: 25px;
+  border: 1px solid var(--border);
+}
+
+.card .number {
+  color: #aaa;
+  font-family: Georgia, serif;
+  font-size: 23px;
+}
+
+.card h3 {
+  font-size: 23px;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.price {
+  color: white !important;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.price-note {
+  text-align: center;
+  color: var(--muted);
+  margin-top: 28px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.tattoo-photo {
+  width: 100%;
+  height: 490px;
+  object-fit: cover;
+  display: block;
+  background: #222;
+  border: 1px solid #444;
+}
+
+.gallery-copy h2,
+.booking h2 {
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+.booking {
+  background: #121212;
+  border-top: 1px solid var(--border);
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.contact-list {
+  display: grid;
+  gap: 14px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #1b1b1b;
+  border: 1px solid #383838;
+  padding: 17px;
+}
+
+.contact-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #666;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.contact small {
+  display: block;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.contact-arrow {
+  margin-left: auto;
+}
+
+footer {
+  padding: 25px 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 760px) {
+  .nav {
+    padding: 15px 0;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  nav {
+    gap: 12px;
+  }
+
+  .hero {
+    padding: 48px 0;
+  }
+
+  .hero-grid,
+  .gallery-grid,
+  .booking-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .artist-photo {
+    height: 430px;
+  }
+
+  .tattoo-photo {
+    height: 400px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 55px 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .brand {
+    font-size: 17px;
+  }
+
+  nav {
+    font-size: 12px;
+  }
+
+  .artist-photo {
+    height: 360px;
+  }
+
+  .tattoo-photo {
+    height: 330px;
+  }
+}
 </style>
 </head>
+
 <body>
-<header><div class="wrap nav">
-  <a class="brand" href="#home">VERONIQUE INK<small>Tattoo Studio</small></a>
-  <nav aria-label="Main navigation"><a href="#services">Services</a><a href="#pricing">Prices</a><a href="#gallery">Gallery</a><a href="#booking">Contact</a></nav>
-  <a class="btn" href="#booking">Book a session</a>
-</div></header>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home">
+      VERONIQUE INK
+      <span>Tattoo Studio</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#pricing">Prices</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#booking">Contact</a>
+    </nav>
+  </div>
+</header>
+
 <main>
-<section class="hero" id="home"><div class="wrap hero-grid">
-  <div><div class="eyebrow">Custom ink · Personal expression</div>
-    <h1>Art that stays.<br><span>Stories that last.</span></h1>
-    <p>Welcome to Veronique Ink Tattoo Studio. Explore thoughtful tattoo artistry and bring your next idea to life with a design made just for you.</p>
-    <div class="actions"><a class="btn" href="#booking">Book an appointment</a><a class="btn btn-outline" href="#gallery">Explore the work</a></div>
-  </div>
-  <div class="hero-image"><img src="assets/artist-portrait.jpeg" alt="Portrait of the artist at Veronique Ink Tattoo Studio"><div class="badge">Made with intention<small>Your idea. Your story. Your ink.</small></div></div>
-</div></section>
-<section class="services" id="services"><div class="wrap">
-  <div class="section-head"><div class="eyebrow">What we do</div><h2>Find your style</h2><p>From a small meaningful symbol to a detailed statement piece, let's create something personal.</p></div>
-  <div class="cards">
-    <article class="card"><div class="num">01</div><h3>Custom Tattoos</h3><p>Original concepts shaped around your story, inspiration, and placement.</p></article>
-    <article class="card"><div class="num">02</div><h3>Black & Grey</h3><p>Detailed shading, contrast, and depth for timeless monochrome designs.</p></article>
-    <article class="card"><div class="num">03</div><h3>Nature & Realism</h3><p>Wildlife, landscapes, and illustrative pieces with fine detail and character.</p></article>
-  </div>
-</div></section>
 
-<section class="services" id="pricing"><div class="wrap">
-  <div class="section-head"><div class="eyebrow">Transparent pricing</div><h2>Tattoo Price List</h2><p>Explore our price ranges and contact us for a personalized quote.</p></div>
-  <div class="cards price-cards">
-    <article class="card"><div class="num">01</div><h3>Small Tattoo</h3><p class="price">$250–$350</p><p>Small designs with clean lines and thoughtful detail.</p></article>
-    <article class="card"><div class="num">02</div><h3>Medium Tattoo</h3><p class="price">$450–$750</p><p>Personalized pieces with room for more detail.</p></article>
-    <article class="card"><div class="num">03</div><h3>Large Tattoo</h3><p class="price">$1,200–$2,300</p><p>Larger artwork with intricate composition and shading.</p></article>
-    <article class="card"><div class="num">04</div><h3>Half Sleeve</h3><p class="price">$2,500–$4,000</p><p>A larger connected design for the upper or lower arm.</p></article>
-    <article class="card"><div class="num">05</div><h3>Full Sleeve</h3><p class="price">$3,000–$6,000</p><p>A full-arm project planned around your chosen concept.</p></article>
-  </div>
-  <p class="price-note">Final pricing depends on design, size, placement, detail, and sessions required. Your final quote will be confirmed before work begins.</p>
-</div></section>
+<section class="hero" id="home">
+  <div class="container hero-grid">
 
-<section id="gallery"><div class="wrap gallery-grid">
-  <img src="assets/tattoo-feature.jpeg" alt="Featured Veronique Ink tattoo: bear in a mountain forest">
-  <div class="gallery-copy"><div class="eyebrow">Featured artwork</div><h2>Every detail tells a story.</h2><p>Take a closer look at this black-and-grey nature piece, featuring a bear framed by evergreen trees and mountain peaks.</p><p class="note">Have a reference image or an idea in mind? Reach out and tell us what you want to create.</p><a class="btn" href="#booking">Discuss your design</a></div>
-</div></section>
-<section class="booking" id="booking"><div class="wrap booking-grid">
-  <div><div class="eyebrow">Let's make it happen</div><h2>Ready for your next piece?</h2><p>Contact Veronique Ink Tattoo Studio to discuss your idea, ask a question, or request an appointment. Please include your preferred design, placement, and approximate size when you message.</p><p class="gold">Appointments are confirmed directly with the studio.</p></div>
-  <div class="contact-list">
-    <a class="contact" href="https://wa.me/18302522446" target="_blank" rel="noopener"><span class="icon">W</span><span><strong>WhatsApp</strong><small>+1 830-252-2446</small></span><span class="go">↗</span></a>
-    <a class="contact" href="https://signal.me/#p/+16028931746" target="_blank" rel="noopener"><span class="icon">S</span><span><strong>Signal</strong><small>+1 602-893-1746</small></span><span class="go">↗</span></a>
-    <div class="contact"><span class="icon">Z</span><span><strong>Zangi</strong><small>ID: 4885058020</small></span><span class="go">✦</span></div>
+    <div>
+      <div class="eyebrow">Custom Ink · Personal Expression</div>
+
+      <h1>
+        Art That Stays.<br>
+        <em>Stories That Last.</em>
+      </h1>
+
+      <p>
+        Welcome to Veronique Ink Tattoo Studio. Discover
+        thoughtful tattoo artistry and bring your ideas to
+        life with designs created around your personal story.
+      </p>
+
+      <div class="actions">
+        <a class="button" href="#booking">Book an Appointment</a>
+        <a class="button outline" href="#gallery">Explore the Gallery</a>
+      </div>
+    </div>
+
+    <div>
+      <img
+        class="artist-photo"
+        src="assets/artist-portrait.jpeg"
+        alt="Artist portrait at Veronique Ink Tattoo Studio"
+      >
+    </div>
+
   </div>
-</div></section>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="eyebrow">Our Services</div>
+      <h2>Find Your Style</h2>
+      <p>
+        From a simple meaningful symbol to a detailed statement
+        piece, let's create artwork that reflects your personality.
+      </p>
+    </div>
+
+    <div class="cards">
+
+      <article class="card">
+        <div class="number">01</div>
+        <h3>Custom Tattoos</h3>
+        <p>
+          Personalized concepts designed around your ideas,
+          inspiration, and preferred placement.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="number">02</div>
+        <h3>Black & Grey</h3>
+        <p>
+          Monochrome designs with detailed shading,
+          contrast, and timeless character.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="number">03</div>
+        <h3>Nature & Realism</h3>
+        <p>
+          Wildlife, landscapes, portraits, and nature-inspired
+          designs with striking detail.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="eyebrow">Transparent Pricing</div>
+      <h2>Tattoo Price List</h2>
+      <p>
+        Explore our starting price ranges and contact the studio
+        for a personalized quote.
+      </p>
+    </div>
+
+    <div class="cards">
+
+      <article class="card">
+        <div class="number">01</div>
+        <h3>Small Tattoo</h3>
+        <p class="price">$250–$350</p>
+        <p>Small designs with clean lines and thoughtful detail.</p>
+      </article>
+
+      <article class="card">
+        <div class="number">02</div>
+        <h3>Medium Tattoo</h3>
+        <p class="price">$450–$750</p>
+        <p>Personalized designs with room for added detail.</p>
+      </article>
+
+      <article class="card">
+        <div class="number">03</div>
+        <h3>Large Tattoo</h3>
+        <p class="price">$1,200–$2,300</p>
+        <p>Detailed artwork with more extensive composition.</p>
+      </article>
+
+      <article class="card">
+        <div class="number">04</div>
+        <h3>Half Sleeve</h3>
+        <p class="price">$2,500–$4,000</p>
+        <p>A connected design for the upper or lower arm.</p>
+      </article>
+
+      <article class="card">
+        <div class="number">05</div>
+        <h3>Full Sleeve</h3>
+        <p class="price">$3,000–$6,000</p>
+        <p>A full-arm project planned around your chosen concept.</p>
+      </article>
+
+    </div>
+
+    <p class="price-note">
+      Final pricing depends on size, placement, complexity,
+      and sessions required. Confirm the final quote before booking.
+    </p>
+
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="container gallery-grid">
+
+    <div>
+      <img
+        class="tattoo-photo"
+        src="assets/tattoo-feature.jpeg"
+        alt="Featured bear and mountain tattoo artwork"
+      >
+    </div>
+
+    <div class="gallery-copy">
+      <div class="eyebrow">Featured Artwork</div>
+
+      <h2>Every Detail Tells a Story.</h2>
+
+      <p>
+        Explore detailed tattoo artwork and find inspiration
+        for your next piece.
+      </p>
+
+      <p>
+        Have a reference image or a design idea? Contact the studio
+        to discuss your preferred style, placement, and size.
+      </p>
+
+      <a class="button" href="#booking">Discuss Your Design</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="booking" id="booking">
+  <div class="container booking-grid">
+
+    <div>
+      <div class="eyebrow">Let's Make It Happen</div>
+
+      <h2>Ready for Your Next Piece?</h2>
+
+      <p>
+        Contact Veronique Ink Tattoo Studio to discuss your
+        tattoo idea, ask questions, or request an appointment.
+      </p>
+
+      <p>
+        When messaging, include your design idea, preferred
+        placement, approximate size, and any reference images.
+      </p>
+    </div>
+
+    <div class="contact-list">
+
+      <a
+        class="contact"
+        href="https://wa.me/18302522446"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="contact-icon">W</span>
+        <span>
+          <strong>WhatsApp</strong>
+          <small>+1 830-252-2446</small>
+        </span>
+        <span class="contact-arrow">↗</span>
+      </a>
+
+      <a
+        class="contact"
+        href="https://signal.me/#p/+16028931746"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="contact-icon">S</span>
+        <span>
+          <strong>Signal</strong>
+          <small>+1 602-893-1746</small>
+        </span>
+        <span class="contact-arrow">↗</span>
+      </a>
+
+      <div class="contact">
+        <span class="contact-icon">Z</span>
+        <span>
+          <strong>Zangi</strong>
+          <small>ID: 4885058020</small>
+        </span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 </main>
-<footer><div class="wrap footer-row"><span>© <span id="year"></span> Veronique Ink Tattoo Studio</span><span>Custom art. Personal meaning. <span class="gold">Made to last.</span></span></div></footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body></html>
+
+<footer>
+  <div class="container footer-row">
+    <span>
+      &copy; <span id="year"></span> Veronique Ink Tattoo Studio
+    </span>
+    <span>Custom Art. Personal Meaning. Made to Last.</span>
+  </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+</script>
+
+</body>
+</html>
