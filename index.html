@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080808">
+<title>Veronique Ink Tattoo Studio</title>
+<style>
+:root{--bg:#080808;--panel:#151515;--text:#f5f2ed;--muted:#bbb5ac;--gold:#c8a66a;--line:#303030}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;background:#080808ee;border-bottom:1px solid var(--line);z-index:3;backdrop-filter:blur(10px)}nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 0}.brand{font-weight:800;letter-spacing:2px}.brand small{display:block;color:var(--gold);font-size:10px;letter-spacing:4px}.links{display:flex;gap:18px;color:var(--muted);font-size:14px}.btn{display:inline-block;padding:12px 18px;background:var(--gold);color:#111;font-weight:bold;border:1px solid var(--gold)}.btn.alt{background:transparent;color:var(--text)}
+.eyebrow{color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-size:12px;font-weight:bold}.hero{display:grid;grid-template-columns:1fr .85fr;gap:45px;align-items:center;padding:65px 0}.hero h1{font-size:clamp(3rem,7vw,5.5rem);line-height:.98;letter-spacing:-3px;margin:16px 0}.hero p,.muted{color:var(--muted)}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}.portrait{height:500px;position:relative;overflow:hidden;border:1px solid #49443d}.portrait img{width:100%;height:100%;object-fit:cover;object-position:center 35%;filter:grayscale(100%)}.label{position:absolute;bottom:16px;left:16px;background:#080808e8;border-left:2px solid var(--gold);padding:10px 14px}
+section{padding:72px 0;border-top:1px solid #222}.head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:28px}.head h2,.about h2,.contact h2{font-size:clamp(2rem,4.5vw,3.4rem);line-height:1.05;margin:10px 0}.head p{max-width:460px;color:var(--muted)}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card,.price{background:var(--panel);border:1px solid var(--line);padding:22px}.card small{color:var(--gold);letter-spacing:2px}.card p,.price p{color:var(--muted)}.prices{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.price{padding:18px 14px}.price h3{font-size:15px;margin:0 0 10px}.amount{color:var(--gold);font-weight:bold}.note{color:var(--muted);font-size:13px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.art{height:370px;position:relative;overflow:hidden;background:#191919;border:1px solid var(--line)}.art img{width:100%;height:100%;object-fit:cover;filter:grayscale(100%);transition:.3s}.art:hover img{transform:scale(1.04);filter:grayscale(20%)}.art span{position:absolute;bottom:12px;left:12px;background:#080808e8;padding:6px 10px;font-size:13px}.about{display:grid;grid-template-columns:.9fr 1fr;gap:38px;align-items:center}.about img{width:100%;height:390px;object-fit:cover;object-position:center 35%;filter:grayscale(100%)}.contact{background:#101010}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}.contact-links{display:grid;gap:12px}.contact-link{display:flex;justify-content:space-between;padding:17px;border:1px solid #393939;background:#171717}.contact-link b{color:var(--gold)}footer{padding:24px 0;color:#9d978f;font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:800px){nav{flex-wrap:wrap}.links{gap:10px;font-size:12px}.hero,.about,.contact-grid{grid-template-columns:1fr}.portrait{height:420px}.grid3{grid-template-columns:1fr}.prices{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}.art{height:280px}.head{display:block}}
+@media(max-width:480px){.links{order:3;width:100%;justify-content:space-between}.portrait{height:360px}.art{height:230px}.price{padding:14px 10px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="brand" href="#home">VERONIQUE INK<small>TATTOO STUDIO</small></a>
+<div class="links"><a href="#services">Services</a><a href="#prices">Prices</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+<a class="btn" href="#contact">Book a session</a>
+</nav></div></header>
+<main>
+<div class="wrap hero" id="home">
+<div><div class="eyebrow">Custom ink · Personal expression</div><h1>Art that stays.<br>Stories that last.</h1><p class="muted">Welcome to Veronique Ink Tattoo Studio. Explore tattoo inspiration and bring your next idea to life with artwork made personal to you.</p><div class="actions"><a class="btn" href="#contact">Book an appointment</a><a class="btn alt" href="#gallery">View sample artwork</a></div></div>
+<div class="portrait"><img src="assets/artist-portrait.jpeg" alt="Veronique Ink artist portrait"><div class="label">Meet your artist · Veronique Ink</div></div>
+</div>
+<section id="services"><div class="wrap"><div class="head"><div><div class="eyebrow">What we do</div><h2>Find your style.</h2></div><p>From a small meaningful symbol to a detailed statement piece, explore ideas and plan a design that feels like you.</p></div><div class="grid3">
+<div class="card"><small>01 / CUSTOM</small><h3>Custom Tattoos</h3><p>Original concepts shaped around your story, inspiration, and placement.</p></div>
+<div class="card"><small>02 / DETAIL</small><h3>Black &amp; Grey</h3><p>Careful shading, strong contrast, and timeless monochrome styles.</p></div>
+<div class="card"><small>03 / ARTISTRY</small><h3>Realism &amp; Sleeve Work</h3><p>Detailed wildlife, portrait, lettering, and statement designs.</p></div>
+</div></div></section>
+<section id="prices"><div class="wrap"><div class="head"><div><div class="eyebrow">Transparent pricing</div><h2>Tattoo price list.</h2></div><p>Prices are estimates. Contact us with your idea for a personalized quote.</p></div><div class="prices">
+<div class="price"><h3>Small Tattoo</h3><div class="amount">$250–$350</div><p>Small designs and fine details.</p></div>
+<div class="price"><h3>Medium Tattoo</h3><div class="amount">$450–$750</div><p>More room for detail.</p></div>
+<div class="price"><h3>Large Tattoo</h3><div class="amount">$1,200–$2,300</div><p>Larger, detailed compositions.</p></div>
+<div class="price"><h3>Half Sleeve</h3><div class="amount">$2,500–$4,000</div><p>A connected arm design.</p></div>
+<div class="price"><h3>Full Sleeve</h3><div class="amount">$3,000–$6,000</div><p>A full-arm artwork project.</p></div>
+</div><p class="note">Final cost depends on size, placement, complexity, and sessions required. Confirm the final quote before booking.</p></div></section>
+<section id="gallery"><div class="wrap"><div class="head"><div><div class="eyebrow">Your artwork samples</div><h2>Explore the gallery.</h2></div><p>Sample work featuring detailed black-and-grey shading, lettering, dice, realism, and sleeve concepts.</p></div><div class="gallery">
+<div class="art"><img src="assets/tattoo-family-dice.jpeg" alt="Dice, money, dagger, and family lettering tattoo sample"><span>Dice &amp; lettering</span></div>
+<div class="art"><img src="assets/tattoo-warrior-sleeve.jpeg" alt="Detailed warrior portrait sleeve tattoo sample"><span>Portrait sleeve</span></div>
+<div class="art"><img src="assets/tattoo-bear-forest.jpeg" alt="Bear and mountain forest tattoo sample"><span>Wildlife realism</span></div>
+<div class="art"><img src="assets/tattoo-family-dice.jpeg" alt="Black and grey tattoo inspiration"><span>Black &amp; grey detail</span></div>
+<div class="art"><img src="assets/tattoo-warrior-sleeve.jpeg" alt="Custom sleeve artwork inspiration"><span>Custom sleeve</span></div>
+<div class="art"><img src="assets/tattoo-bear-forest.jpeg" alt="Nature-inspired tattoo artwork"><span>Nature &amp; realism</span></div>
+</div></div></section>
+<section><div class="wrap about"><img src="assets/artist-portrait.jpeg" alt="Veronique Ink artist portrait"><div><div class="eyebrow">Meet the artist</div><h2>Personal art. Individual style.</h2><p class="muted">Every tattoo should mean something to the person wearing it. Bring your inspiration, reference images, and ideas, and let's discuss a design that fits your story and style.</p><a class="btn" href="#contact">Discuss your design</a></div></div></section>
+<section class="contact" id="contact"><div class="wrap contact-grid"><div><div class="eyebrow">Let's make it happen</div><h2>Ready for your next piece?</h2><p class="muted">Contact Veronique Ink Tattoo Studio to ask a question or request an appointment. Tell us the style you like and the area you want tattooed.</p></div><div class="contact-links">
+<a class="contact-link" href="https://wa.me/18302522446"><span><b>WhatsApp</b><br>+1 830-252-2446</span><span>↗</span></a>
+<a class="contact-link" href="https://signal.me/#p/+16028931746"><span><b>Signal</b><br>+1 602-893-1746</span><span>↗</span></a>
+<div class="contact-link"><span><b>Zangi ID</b><br>4885058020</span><span>✦</span></div>
+</div></div></section>
+</main>
+<footer class="wrap"><span>© <span id="year"></span> Veronique Ink Tattoo Studio</span><span>Custom art. Personal meaning. Made to last.</span></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body></html>
