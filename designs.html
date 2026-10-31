@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tattoo Designs | Veronique Ink Tattoo Studio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #080808;
+      color: #f7f7f7;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      border-bottom: 1px solid #303030;
+      padding: 18px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .back-button {
+      background: white;
+      color: black;
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #b8b8b8;
+      font-size: 17px;
+    }
+
+    .categories {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .categories h2 {
+      margin-bottom: 20px;
+    }
+
+    .category-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+
+    .category-buttons a {
+      text-decoration: none;
+      color: white;
+      border: 1px solid #555;
+      padding: 10px 16px;
+      border-radius: 25px;
+    }
+
+    .category-buttons a:hover {
+      background: white;
+      color: black;
+    }
+
+    .gallery-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .gallery-section h2 {
+      text-align: center;
+      font-size: 28px;
+      margin: 45px 0 25px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .design-card {
+      background: #141414;
+      border: 1px solid #303030;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .design-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .design-card img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .design-card h3 {
+      padding: 15px 15px 5px;
+      font-size: 18px;
+    }
+
+    .design-card p {
+      padding: 0 15px 18px;
+      color: #b8b8b8;
+      font-size: 14px;
+    }
+
+    .booking {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px 20px;
+      text-align: center;
+      background: #141414;
+      border: 1px solid #303030;
+      border-radius: 10px;
+    }
+
+    .booking h2 {
+      margin-bottom: 15px;
+    }
+
+    .booking p {
+      color: #b8b8b8;
+      margin-bottom: 25px;
+    }
+
+    .book-button {
+      display: inline-block;
+      background: white;
+      color: black;
+      padding: 14px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      border-top: 1px solid #303030;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .design-card img {
+        height: 320px;
+      }
+
+      .nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav">
+      <a href="index.html" class="logo">
+        Veronique Ink Tattoo Studio
+      </a>
+
+      <a href="index.html" class="back-button">
+        ← Back to Home
+      </a>
+    </div>
+  </header>
+
+
+  <section class="hero">
+    <h1>Tattoo Design Gallery</h1>
+
+    <p>
+      Explore different tattoo styles and designs. Find inspiration for your
+      next tattoo and choose a design that speaks to you.
+    </p>
+  </section>
+
+
+  <section class="categories">
+
+    <h2>Explore Different Styles</h2>
+
+    <div class="category-buttons">
+      <a href="#realistic">Realistic</a>
+      <a href="#sleeves">Sleeves</a>
+      <a href="#animals">Animals</a>
+      <a href="#minimal">Minimalist</a>
+    </div>
+
+  </section>
+
+
+  <!-- REALISTIC DESIGNS -->
+
+  <section class="gallery-section" id="realistic">
+
+    <h2>Realistic Tattoo Designs</h2>
+
+    <div class="gallery">
+
+      <div class="design-card">
+        <img src="assets/tattoo-design-1.png" alt="Tattoo Design">
+        <h3>Realistic Tattoo Design</h3>
+        <p>A detailed tattoo design for inspiration.</p>
+      </div>
+
+      <div class="design-card">
+        <img src="assets/tattoo-design-2.png" alt="Tattoo Design">
+        <h3>Detailed Artwork</h3>
+        <p>Professional tattoo inspiration and artwork.</p>
+      </div>
+
+      <div class="design-card">
+        <img src="assets/tattoo-design-3.png" alt="Tattoo Design">
+        <h3>Realistic Style</h3>
+        <p>Detailed artwork with strong shading.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SLEEVE DESIGNS -->
+
+  <section class="gallery-section" id="sleeves">
+
+    <h2>Sleeve Tattoo Designs</h2>
+
+    <div class="gallery">
+
+      <div class="design-card">
+        <img src="assets/tattoo-warrior-sleeve.jpeg" alt="Warrior Sleeve Tattoo">
+        <h3>Warrior Sleeve</h3>
+        <p>A detailed warrior-inspired sleeve design.</p>
+      </div>
+
+      <div class="design-card">
+        <img src="assets/tattoo-design-4.png" alt="Sleeve Tattoo">
+        <h3>Creative Sleeve</h3>
+        <p>A design idea for a larger tattoo project.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ANIMAL DESIGNS -->
+
+  <section class="gallery-section" id="animals">
+
+    <h2>Animal & Nature Tattoos</h2>
+
+    <div class="gallery">
+
+      <div class="design-card">
+        <img src="assets/tattoo-bear-forest.jpeg" alt="Bear Forest Tattoo">
+        <h3>Bear & Mountain Forest</h3>
+        <p>A nature-inspired realistic tattoo design.</p>
+      </div>
+
+      <div class="design-card">
+        <img src="assets/tattoo-design-5.png" alt="Animal Tattoo">
+        <h3>Animal Design</h3>
+        <p>A bold animal-inspired tattoo concept.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- OTHER DESIGNS -->
+
+  <section class="gallery-section" id="minimal">
+
+    <h2>Other Tattoo Styles</h2>
+
+    <div class="gallery">
+
+      <div class="design-card">
+        <img src="assets/tattoo-family-dice.jpeg" alt="Family Dice Tattoo">
+        <h3>Family Dice Design</h3>
+        <p>A meaningful design combining family and classic imagery.</p>
+      </div>
+
+      <div class="design-card">
+        <img src="assets/tattoo-design-6.png" alt="Tattoo Design">
+        <h3>Simple & Minimalist</h3>
+        <p>A clean and simple tattoo inspiration.</p>
+      </div>
+
+      <div class="design-card">
+        <img src="assets/tattoo-design-7.png" alt="Tattoo Design">
+        <h3>Creative Design</h3>
+        <p>More artwork ideas for your next tattoo.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- BOOKING -->
+
+  <section class="booking">
+
+    <h2>Ready to Get Your Tattoo?</h2>
+
+    <p>
+      Choose a design you like and return to our main website to book your appointment.
+      A 50% deposit is required to secure your appointment.
+    </p>
+
+    <a href="index.html#booking" class="book-button">
+      Book an Appointment
+    </a>
+
+  </section>
+
+
+  <footer>
+    <p>© 2026 Veronique Ink Tattoo Studio. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
